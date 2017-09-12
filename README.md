@@ -1,6 +1,6 @@
 # phpmailer-codeigniter
 
-Send mails via phpmailer on codeigniter
+Send mails via phpmailer on codeigniter. Can be useful for someone that doesnot want clone complete source of PHP Mailer repository.
 
 ## Usage
 
@@ -13,11 +13,12 @@ $mail = $this->phpmailerlib->load();
 ### Sample Function
 
 ```
+Replace USERNAME, PASSWORD, and other variables accordingly 
 function phpmailer()
-	{
-		$this->load->library("PhpMailerLib");
+{
+	$this->load->library("PhpMailerLib");
         $mail = $this->phpmailerlib->load();
-		try {
+	try {
 		    //Server settings
 		    $mail->SMTPDebug = 2;                                 // Enable verbose debug output
 		    $mail->isSMTP();                                      // Set mailer to use SMTP
