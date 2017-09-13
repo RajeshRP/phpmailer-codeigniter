@@ -13,7 +13,7 @@ $mail = $this->phpmailerlib->load();
 ### Sample Function
 
 ```
-Replace USERNAME, PASSWORD, and other variables accordingly 
+//Replace USERNAME, PASSWORD, and other variables accordingly 
 function phpmailer()
 {
 	$this->load->library("PhpMailerLib");
@@ -32,7 +32,7 @@ function phpmailer()
 		    $mail->setFrom('USEREMAIL', 'Ganesha from Retainly');
 		    $mail->addAddress('RECEIPIENTEMAIL01', 'RICIPIENTNAME');     // Add a recipient
 		    $mail->addAddress('RECEIPIENTEMAIL02');               // Name is optional
-		    $mail->addReplyTo('tejakhan@yahoo.com', 'Ganesha');
+		    $mail->addReplyTo('RECEIPIENTEMAIL03', 'Ganesha');
 		    //$mail->addCC('cc@example.com');
 		    //$mail->addBCC('bcc@example.com');
 
